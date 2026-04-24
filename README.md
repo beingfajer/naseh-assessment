@@ -9,7 +9,7 @@ A full-stack web application that collects company information through a multi-s
 - **Tailwind CSS**
 - **Prisma ORM**
 - **SQLite**
-- **OpenAI API**
+- **Groq API**
 
 ## Steps to run the app
 
@@ -36,6 +36,36 @@ npx prisma generate
 ### 5. Run the development server
 
 npm run dev
+
+## API Endpoints (tested using Postman)
+
+## Assessment
+
+#### GET /api/assessment
+fetches the existing company assessment - no body required
+
+#### POST /api/assessment
+creates a new company assessment.
+the database generates a string id (assessmentId), copy it bc we'll need it for the other endpoints 
+
+#### PUT /api/assessment
+updates an existing assessment. and here assessment id must be passed to the body
+
+for example:
+{
+  "id": "cmocu6box0006rriar8ylq0fm",
+  .
+  .
+  .
+}
+
+#### DELETE /api/assessment
+deletes the assessment and all related data (shareholders, messages, policies) due to cascading deletes. also here assessment id must be passed to the body
+
+for example:
+{
+  "id": "cmocu6box0006rriar8ylq0fm"
+}
 
 
 ## Features
