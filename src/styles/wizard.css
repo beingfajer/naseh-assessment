@@ -1,0 +1,280 @@
+/* Wizard wrapper */
+.wizard-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #f5f5f0;
+}
+
+.wizard-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 560px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+.wizard-header {
+  margin-bottom: 2rem;
+}
+
+.wizard-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 0.25rem;
+}
+
+.wizard-subtitle {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Progress */
+.wizard-progress {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.progress-step-wrapper {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.progress-step {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #e8e8e3;
+  color: #888;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.progress-step.active {
+  background: #1a1a1a;
+  color: #ffffff;
+}
+
+.progress-step.completed {
+  background: #4caf7d;
+  color: #ffffff;
+}
+
+.progress-line {
+  flex: 1;
+  height: 2px;
+  background: #e8e8e3;
+  margin: 0 0.5rem;
+  transition: background 0.3s ease;
+}
+
+.progress-line.completed {
+  background: #4caf7d;
+}
+
+/* Step content */
+.wizard-body {
+  margin-bottom: 1.5rem;
+}
+
+.step-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.step-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.step-subtitle {
+  font-size: 0.875rem;
+  color: #888;
+  margin-top: -0.75rem;
+}
+
+/* Form elements */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.form-input {
+  padding: 0.75rem 1rem;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #1a1a1a;
+  background: #fafafa;
+  transition: border-color 0.2s ease;
+}
+
+.form-input:focus {
+  border-color: #1a1a1a;
+  background: #ffffff;
+}
+
+.form-textarea {
+  padding: 0.75rem 1rem;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #1a1a1a;
+  background: #fafafa;
+  resize: vertical;
+  transition: border-color 0.2s ease;
+}
+
+.form-textarea:focus {
+  border-color: #1a1a1a;
+  background: #ffffff;
+}
+
+/* Shareholders */
+.shareholder-row {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.shareholder-name {
+  flex: 1;
+}
+
+.shareholder-percent {
+  width: 80px;
+}
+
+.remove-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #fee2e2;
+  color: #dc2626;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.2s;
+}
+
+.remove-btn:hover {
+  background: #fecaca;
+}
+
+.shareholders-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.add-shareholder-btn {
+  font-size: 0.875rem;
+  color: #1a1a1a;
+  font-weight: 500;
+  padding: 0.4rem 0.75rem;
+  border: 1.5px dashed #ccc;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.add-shareholder-btn:hover {
+  border-color: #1a1a1a;
+}
+
+.total-percent {
+  font-size: 0.875rem;
+  color: #888;
+  font-weight: 500;
+}
+
+.total-percent.exact {
+  color: #4caf7d;
+}
+
+.total-percent.over {
+  color: #dc2626;
+}
+
+/* Error */
+.wizard-error {
+  color: #dc2626;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  background: #fee2e2;
+  border-radius: 8px;
+}
+
+/* Actions */
+.wizard-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+.btn-primary {
+  padding: 0.75rem 1.75rem;
+  background: #1a1a1a;
+  color: #ffffff;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.btn-primary:hover {
+  opacity: 0.85;
+}
+
+.btn-primary:disabled {
+  opacity: 0.5;
+}
+
+.btn-secondary {
+  padding: 0.75rem 1.75rem;
+  background: transparent;
+  color: #1a1a1a;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: border-color 0.2s;
+}
+
+.btn-secondary:hover {
+  border-color: #1a1a1a;
+}
+
+/* Loading screen */
+.loading-screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-size: 1rem;
+}
