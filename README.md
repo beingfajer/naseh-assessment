@@ -142,5 +142,13 @@ fetches all saved policies for a given assessment, ordered newest first.
 ]
 
 ## Features
-
-- TBL
+- *Multi-step Assessment Wizard*:  collects company name, email, location, shareholders and their percentages, and primary business activity through a guided step-by-step form with validation
+- *Smart Entry Point*: if the user has already completed the assessment, they are taken directly to the chat instead of seeing the wizard again
+- *Edit & Delete Assessment*: users can update their company information or delete it entirely and restart from scratch
+- *AI Chatbot**: a ChatGPT-like chat interface where the AI uses the company assessment as context to answer questions about regulations, compliance, and business advice
+- *Persistent Chat History*: all messages are saved to the database and loaded on every visit so the conversation is never lost
+- *Policy Generation*: when the user asks the AI to generate a policy, it is automatically saved to the database and appears in the Policy page
+- *Policy Editor*: users can view, edit the title and content of, and delete any generated policy
+- *Repository Pattern*: clean separation between API routes and database logic using a dedicated repository layer
+- *Typing Indicator*: animated dots appear while the AI is generating a response
+- *Sidebar Navigation*: consistent navigation between Chat and Policies across all pages
