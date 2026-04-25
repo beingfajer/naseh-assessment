@@ -5,7 +5,7 @@ A full-stack web application that collects company information through a multi-s
 ## Tech Stack
 
 - **Next.js 14** (App Router)
-- **TypeScript**
+- **JavaScript**
 - **Tailwind CSS**
 - **Prisma ORM**
 - **SQLite**
