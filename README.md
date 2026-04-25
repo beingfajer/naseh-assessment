@@ -6,7 +6,7 @@ A full-stack web application that collects company information through a multi-s
 
 - **Next.js 14** (App Router)
 - **JavaScript**
-- **Tailwind CSS**
+- **CSS**
 - **Prisma ORM**
 - **SQLite**
 - **Groq API**
